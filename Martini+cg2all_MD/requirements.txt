@@ -7,7 +7,7 @@
 #python>=3.9,<3.10
 
 # Core scientific computing
-numpy==1.23.5
+numpy
 scipy==1.10.1
 pandas==1.5.3
 matplotlib==3.7.1

@@ -2,3 +2,13 @@
 mamba create -n cg2all python=3.9
 mamba install -n cg2all -c conda-forge ambertools openmm mdtraj cudatoolkit=11.3 dgl=1.0 -c dglteam/label/cu113
 pip install -r requirements.txt
+#commands copy and paste pytraj
+git clone https://github.com/Amber-MD/pytraj
+cd pytraj
+python setup.py install
+cd ..
+#martini_openmm commands
+git clone https://github.com/maccallumlab/martini_openmm
+cd martini_openmm
+python setup.py install
+cd ..

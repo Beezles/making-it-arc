@@ -1,0 +1,4 @@
+# Create environment
+mamba create -n cg2all python=3.9
+mamba install -n cg2all -c conda-forge ambertools openmm mdtraj cudatoolkit=11.3 dgl=1.0 -c dglteam/label/cu113
+pip install -r requirements.txt

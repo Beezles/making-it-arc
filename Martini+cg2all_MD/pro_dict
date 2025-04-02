@@ -1,0 +1,29 @@
+import sys
+import os
+
+pro_dict = {
+    "Name" : {"Martini+cg2all", "Biomolecular Emulator", "Subsampled AlphaFold2"
+                 "AMBER Mutations", " Protein-membrane simulations", "DRUDE"
+                 "GLYCAM", "Small molecules MD", "RESP Partial charges"
+                 "GROMACS inputs", "AMBER inputs", "Protein-ligand simulations"
+                 "AlphaFold2+MD", "CHARMM", "AMBER"},
+    "Description" : {"Utilizing Vermouth, the Python library that powers Martinize2, to generate the topology and build the simulation box for protein systems using Martini force fields. Additionally, employing cg2at to predict all-atom trajectories from coarse-grained (CG) representations.",
+                     "Biomolecular Emulator (BioEmu), a model that samples from the approximated equilibrium distribution of structures for a protein monomer, given its amino acid sequence.",
+                     "Colab notebook for running the subsampled AlphaFold2 approach for predicting protein conformational ensembles.",
+                     "Performing mutations on protein/nucleic acid systems and utilizing AMBER to generate the topology and build the simulation box.",
+                     "Using OpenFF to generate the topology and build the simulation box for protein-membrane systems with AMBER force fields.",
+                     "Using inputs from CHARMM-GUI Drude Prepper",
+                     "Using inputs from GLYCAM server",
+                     "Using a SMILES as a input, geometry optimization with TorchANI and topology with AMBER (GAFF2 force field)",
+                     "Using a SMILES as input and outputs a mol2 file with RESP derived partial charges. Options for setting method (HF, B3LYP, ...), basis set (3-21G, 6-31G*) and singlepoint or geometry optimization are available",
+                     "Using inputs from GROMACS biomolecular simulation package (AMBER, CHARMM and OPLS force fields are compatible)",
+                     "Using inputs from AMBER suite of biomolecular simulation program",
+                     "Using AMBER to generate topology and to build the simulation box and for the ligand using GAFF2 force field",
+                     "Using AlphaFold2_mmseqs2 to generate protein model + MD simulation using AMBER to generate topology and to build simulation box",
+                     "Using inputs from CHARMM-GUI solution builder",
+                     "Using AMBER to generate topology and to build the simulation box"},
+    "File" : "djfd"
+}
+
+parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(parent_dir)

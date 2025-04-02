@@ -1,0 +1,54 @@
+#Install packages in batches if you encounter issues. This should work:
+# pip install numpy scipy pandas matplotlib
+# pip install openmm MDAnalysis mdtraj
+# pip install -r requirements.txt
+
+# Core requirements
+#python>=3.9,<3.10
+
+# Core scientific computing
+numpy==1.23.5
+scipy==1.10.1
+pandas==1.5.3
+matplotlib==3.7.1
+seaborn==0.12.2
+
+# PyTorch (updated for Python 3.9 compatibility)
+torch==1.12.1
+torchvision==0.13.1
+torchaudio==0.12.1
+#For GPU support install pytorch seperately in the terminal
+#pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1+cu113 --extra-index-url https://download.pytorch.org/whl/cu113
+
+
+# MD simulation and analysis
+openmm==7.7.0
+MDAnalysis==2.4.2
+mdtraj==1.9.7
+pytraj==2.0.5
+biopandas==0.4.1  # Using PyPI version instead of git
+vermouth==0.7.1
+parmed==4.1.0
+
+# Interactive interface
+inquirer==3.1.3
+questionary==2.0.1
+colorama==0.4.6
+tqdm==4.65.0
+
+# BioPython ecosystem
+biopython==1.81
+
+# Visualization
+py3Dmol==0.8.1
+ipython==8.12.0
+
+# Specialized tools (updated git references)
+martini_openmm @ git+https://github.com/pablo-arantes/martini_openmm
+simopt @ git+https://github.com/Tsjerk/simopt
+Insane @ git+https://github.com/pablo-arantes/Insane
+
+# Additional utilities
+scikit-learn==1.2.2
+requests==2.31.0
+six==1.16.0

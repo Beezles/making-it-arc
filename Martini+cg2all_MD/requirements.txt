@@ -25,7 +25,6 @@ torchaudio
 openmm
 MDAnalysis
 mdtraj
-pytraj
 biopandas  # Using PyPI version instead of git
 vermouth
 parmed

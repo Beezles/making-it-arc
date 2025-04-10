@@ -33,8 +33,7 @@ from openmm.unit import (
     kilojoule_per_mole, kilocalorie_per_mole
 )
 from sys import stdout
-from MDAnalysis.analysis import align, rms
-from MDAnalysis.analysis.msd import DiffusionCoefficient
+from MDAnalysis.analysis.msd import EinsteinMSD
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt

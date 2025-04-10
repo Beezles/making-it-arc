@@ -49,6 +49,6 @@ simopt @ git+https://github.com/Tsjerk/simopt
 Insane @ git+https://github.com/pablo-arantes/Insane
 
 # Additional utilities
-scikit-learn==1.2.2
-requests==2.31.0
-six==1.16.0
+scikit-learn
+requests
+six

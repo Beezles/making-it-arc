@@ -1,3 +1,5 @@
+#incorporate alpha fold 2 and tweak the design
+
 from functions import *
 import os
 import sys
